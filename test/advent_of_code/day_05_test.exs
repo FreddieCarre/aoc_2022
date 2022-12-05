@@ -3,19 +3,17 @@ defmodule AdventOfCode.Day05Test do
 
   import AdventOfCode.Day05
 
-  @tag :skip
   test "part1" do
-    input = nil
+    input = "    [D]     \n[N] [C]     \n[Z] [M] [P] \n 1   2   3 \n\nmove 1 from 2 to 1\nmove 3 from 1 to 3\nmove 2 from 2 to 1\nmove 1 from 1 to 2"
     result = part1(input)
 
-    assert result
+    assert result == "CMZ"
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
+    input = "    [D]     \n[N] [C]     \n[Z] [M] [P] \n 1   2   3 \n\nmove 1 from 2 to 1\nmove 3 from 1 to 3\nmove 2 from 2 to 1\nmove 1 from 1 to 2"
     result = part2(input)
 
-    assert result
+    assert result == "MCD"
   end
 end
