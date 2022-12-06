@@ -3,19 +3,32 @@ defmodule AdventOfCode.Day06Test do
 
   import AdventOfCode.Day06
 
-  @tag :skip
   test "part1" do
-    input = nil
-    result = part1(input)
+    [
+      {"bvwbjplbgvbhsrlpgdmjqwftvncz", 5},
+      {"nppdvjthqldpwncqszvftbrmjlhg", 6},
+      {"nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg", 10},
+      {"zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", 11}
+    ]
+    |> Enum.each(fn {input, exp} ->
+      result = part1(input)
 
-    assert result
+      assert result == exp
+    end)
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
-    result = part2(input)
+    [
+      {"mjqjpqmgbljsphdztnvjfqwrcgsmlb", 19},
+      {"bvwbjplbgvbhsrlpgdmjqwftvncz", 23},
+      {"nppdvjthqldpwncqszvftbrmjlhg", 23},
+      {"nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg", 29},
+      {"zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", 26}
+    ]
+    |> Enum.each(fn {input, exp} ->
+      result = part2(input)
 
-    assert result
+      assert result == exp
+    end)
   end
 end
